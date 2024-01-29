@@ -7,7 +7,7 @@ import re
 import numpy as np
 import numpy.lib.recfunctions as rfn
 import matplotlib.pyplot as plt
-from utils import *
+from hybrid_qsvm.utils import *
 
 import shutil
 import pickle

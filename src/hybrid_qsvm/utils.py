@@ -8,8 +8,8 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_auc_score,average_precision_score,precision_recall_curve,roc_curve,accuracy_score,auc
-from load_data import *
-from QgSVM_utils import QgSVM
+from src.hybrid_qsvm.load_data import *
+from hybrid_qsvm.QgSVM_utils import QgSVM
 
 
 np.set_printoptions(precision=4, suppress=True)
