@@ -5,11 +5,30 @@ description = "Default template for PDM package"
 authors = [
     {name = "IraitzM", email = "iraitzm@gmail.com"},
 ]
-dependencies = []
+dependencies = [
+    "numpy>=1.26.3",
+    "scikit-learn>=1.4.0",
+    "pandas>=2.2.0",
+    "pennylane>=0.34.0",
+    "jax>=0.4.23",
+    "jaxlib>=0.4.23",
+    "dwave-ocean-sdk>=6.8.0",
+    "tensorflow>=2.15.0",
+]
 requires-python = "==3.10.*"
 readme = "README.md"
 license = {text = "MIT"}
 
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
 
 [tool.pdm]
-distribution = false
+distribution = true
+
+[tool.pdm.dev-dependencies]
+notebook = [
+    "ipykernel>=6.29.0",
+    "matplotlib>=3.8.2",
+    "seaborn>=0.13.2",
+]
